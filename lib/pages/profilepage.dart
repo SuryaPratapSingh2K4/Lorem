@@ -5,8 +5,8 @@ class ProfilePage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Padding(
-      padding: const EdgeInsets.only(top: 70.0, left: 20, right: 20,),
+    return const Padding(
+      padding: EdgeInsets.only(top: 70.0, left: 20, right: 20,),
       child: Column(
         children: [
           Row(

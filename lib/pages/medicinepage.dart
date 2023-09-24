@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:lorem/cart.dart';
 //import 'package:lorem/widget/Medicine_name.dart';
 
 class MedicinePage extends StatelessWidget {
@@ -25,7 +26,15 @@ class MedicinePage extends StatelessWidget {
                     fontWeight: FontWeight.w700,
                     color: Color(0xFFE29D34),
                   )),
-              Icon(Icons.notification_add_rounded)
+              GestureDetector(
+                child: Image.asset(
+                  "images.Shopping Cart.png",
+                ),
+                onTap: () {
+                  Navigator.push(context,
+                      MaterialPageRoute(builder: (context) => const Cart()));
+                },
+              )
             ],
           ),
           SizedBox(
@@ -41,25 +50,19 @@ class MedicinePage extends StatelessWidget {
           SizedBox(
             height: 12,
           ),
-          Text(
-               "Always try to take pescribed medicines",
-              style : TextStyle(
-                fontSize : 14,
-                fontFamily : 'R.font.poppins',
-                fontWeight : FontWeight.w300,
-                color : Color(0xFFA43232),
-                letterSpacing : 1.05,
+          Text("Always try to take pescribed medicines",
+              style: TextStyle(
+                fontSize: 14,
+                fontFamily: 'R.font.poppins',
+                fontWeight: FontWeight.w300,
+                color: Color(0xFFA43232),
+                letterSpacing: 1.05,
               )),
-              SizedBox(
-                height: 18,
-              ),
-              
+          SizedBox(
+            height: 18,
+          ),
         ],
       ),
     );
   }
 }
-
-
-
-
