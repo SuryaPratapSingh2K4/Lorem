@@ -19,7 +19,7 @@ class MedicinePage extends StatelessWidget {
           Row(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
-              Text("Lorem",
+              const Text("Lorem",
                   style: TextStyle(
                     fontSize: 24,
                     fontFamily: 'R.font.poppins',
@@ -27,30 +27,30 @@ class MedicinePage extends StatelessWidget {
                     color: Color(0xFFE29D34),
                   )),
               GestureDetector(
-                child: Image.asset(
-                  "images.Shopping Cart.png",
+                child: const Icon(
+                  Icons.shopping_cart_checkout_outlined,
                 ),
-                onTap: () {
-                  Navigator.push(context,
-                      MaterialPageRoute(builder: (context) => const Cart()));
-                },
+                onTap: () => Navigator.push(context,
+                    MaterialPageRoute(builder: (context) {
+                  return const Cart();
+                })),
               )
             ],
           ),
-          SizedBox(
+          const SizedBox(
             height: 16,
           ),
-          Text("AYUSH Medicines for general purpose",
+          const Text("AYUSH Medicines for general purpose",
               style: TextStyle(
                 fontSize: 21,
                 fontFamily: 'R.font.poppins',
                 fontWeight: FontWeight.w600,
                 color: Color(0xFF060606),
               )),
-          SizedBox(
+          const SizedBox(
             height: 12,
           ),
-          Text("Always try to take pescribed medicines",
+          const Text("Always try to take pescribed medicines",
               style: TextStyle(
                 fontSize: 14,
                 fontFamily: 'R.font.poppins',
@@ -58,7 +58,7 @@ class MedicinePage extends StatelessWidget {
                 color: Color(0xFFA43232),
                 letterSpacing: 1.05,
               )),
-          SizedBox(
+          const SizedBox(
             height: 18,
           ),
         ],
