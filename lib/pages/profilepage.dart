@@ -27,7 +27,7 @@ class ProfilePage extends StatelessWidget {
             ],
           ),
           SizedBox(
-            height: 22,
+            height: 24,
           ),
           Container(
             height: 200,
@@ -39,8 +39,61 @@ class ProfilePage extends StatelessWidget {
             ),
           ),
           SizedBox(
-            height: 22,
+            height: 24,
           ),
+          Column(
+            mainAxisAlignment: MainAxisAlignment.start,
+            children: [
+              Text("NAME NAME",
+                  style: TextStyle(
+                    fontSize: 16,
+                    fontFamily: 'R.font.poppins',
+                    fontWeight: FontWeight.w600,
+                    color: Color(0xFF000000),
+                  )),
+              SizedBox(
+                height: 12,
+              ),
+              Text("state",
+                  style: TextStyle(
+                    fontSize: 16,
+                    fontFamily: 'R.font.poppins',
+                    fontWeight: FontWeight.w400,
+                    color: Color(0xFF000000),
+                  )),
+              SizedBox(
+                height: 12,
+              ),
+              Text("District",
+                  style: TextStyle(
+                    fontSize: 16,
+                    fontFamily: 'R.font.poppins',
+                    fontWeight: FontWeight.w400,
+                    color: Color(0xFF000000),
+                  )),
+              SizedBox(
+                height: 12,
+              ),
+              Row(
+                children: [
+                  Text("Phone number",
+                      style: TextStyle(
+                        fontSize: 16,
+                        fontFamily: 'R.font.poppins',
+                        fontWeight: FontWeight.w600,
+                        color: Color(0xFF000000),
+                      )),
+                  Text("94370212442",
+                      style: TextStyle(
+                        fontSize: 16,
+                        fontFamily: 'R.font.poppins',
+                        fontWeight: FontWeight.w500,
+                        color: Color(0xFF5B5A57),
+                      ))
+                ],
+              )
+            ],
+          )
         ],
       ),
     );
