@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_svg/svg.dart';
 import 'package:lorem/widgets/medicine_name.dart';
 
 class MedicinePage extends StatefulWidget {

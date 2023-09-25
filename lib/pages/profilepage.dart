@@ -6,7 +6,7 @@ class ProfilePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.only(
+      padding: EdgeInsets.only(
         top: 70.0,
         left: 20,
         right: 20,
@@ -83,13 +83,12 @@ class ProfilePage extends StatelessWidget {
                         fontWeight: FontWeight.w600,
                         color: Color(0xFF000000),
                       )),
-                  Text(
-                      "94370212442",
-                      style : TextStyle(
-                        fontSize : 16,
-                        fontFamily : 'R.font.poppins',
-                        fontWeight : FontWeight.w500,
-                        color : Color(0xFF5B5A57),
+                  Text("94370212442",
+                      style: TextStyle(
+                        fontSize: 16,
+                        fontFamily: 'R.font.poppins',
+                        fontWeight: FontWeight.w500,
+                        color: Color(0xFF5B5A57),
                       ))
                 ],
               )

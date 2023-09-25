@@ -3,7 +3,6 @@ import 'package:lorem/pages/home.dart';
 import 'package:lorem/pages/medicinepage.dart';
 import 'package:lorem/pages/profilepage.dart';
 
-
 class NavigationBarPage extends StatefulWidget {
   const NavigationBarPage({super.key});
 

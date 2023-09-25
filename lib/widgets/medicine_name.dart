@@ -72,8 +72,7 @@ class _MedicineNameState extends State<MedicineName> {
           ],
         ),
         Padding(
-          padding:
-              const EdgeInsets.only(top: 10.0, left: 20, right: 20),
+          padding: const EdgeInsets.only(top: 10.0, left: 20, right: 20),
           child: Column(
             mainAxisAlignment: MainAxisAlignment.start,
             children: [
@@ -82,9 +81,7 @@ class _MedicineNameState extends State<MedicineName> {
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   ElevatedButton(
-                    onPressed: (){
-
-                    },
+                    onPressed: () {},
                     child: Text("price",
                         style: TextStyle(
                           fontSize: 16,
@@ -94,15 +91,13 @@ class _MedicineNameState extends State<MedicineName> {
                         )),
                   ),
                   ElevatedButton(
-                    onPressed: (){
-                      
-                    },
-                    child: Text("warning if needed",
+                    onPressed: () {},
+                    child: Text("ADD",
                         style: TextStyle(
                           fontSize: 16,
                           fontFamily: 'R.font.poppins',
                           fontWeight: FontWeight.w600,
-                          color: Color(0xFFA43232),
+                          color: Colors.blue.shade800,
                         )),
                   )
                 ],
