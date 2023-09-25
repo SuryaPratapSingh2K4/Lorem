@@ -3,7 +3,6 @@ import 'package:lorem/pages/home.dart';
 import 'package:lorem/pages/medicinepage.dart';
 import 'package:lorem/pages/profilepage.dart';
 
-
 class NavigationBarPage extends StatefulWidget {
   const NavigationBarPage({super.key});
 
@@ -14,11 +13,11 @@ class NavigationBarPage extends StatefulWidget {
 class _NavigationBarPageState extends State<NavigationBarPage> {
   int index = 0;
 
-  final List<Widget> _index = [const MyHomePage(), const MedicinePage(), const ProfilePage()];
+  List<Widget> _index = [MyHomePage(), MedicinePage(), ProfilePage()];
 
-  void updatePage(int index) {
+  void updatePage(int _index) {
     setState(() {
-      index = index;
+      index = _index;
     });
   }
 
@@ -28,22 +27,22 @@ class _NavigationBarPageState extends State<NavigationBarPage> {
       body: _index[index],
       bottomNavigationBar: Container(
         height: 70,
-        decoration: const BoxDecoration(
+        decoration: BoxDecoration(
             borderRadius: BorderRadius.only(
                 topLeft: Radius.circular(20), topRight: Radius.circular(20))),
         child: BottomNavigationBar(
-          selectedItemColor: const Color(0xFF2B2B2B),
-          unselectedItemColor: const Color(0xFF2B2B2B),
-          backgroundColor: const Color(0xFFEFEFEF),
+          selectedItemColor: Color(0xFF2B2B2B),
+          unselectedItemColor: Color(0xFF2B2B2B),
+          backgroundColor: Color(0xFFEFEFEF),
           selectedLabelStyle:
-              const TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
-          unselectedLabelStyle: const TextStyle(fontSize: 14),
-          selectedIconTheme: const IconThemeData(size: 30),
-          unselectedIconTheme: const IconThemeData(size: 26),
+              TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
+          unselectedLabelStyle: TextStyle(fontSize: 14),
+          selectedIconTheme: IconThemeData(size: 30),
+          unselectedIconTheme: IconThemeData(size: 26),
           type: BottomNavigationBarType.fixed,
           currentIndex: index,
           onTap: updatePage,
-          items: const [
+          items: [
             BottomNavigationBarItem(
               icon: Icon(
                 Icons.home,
